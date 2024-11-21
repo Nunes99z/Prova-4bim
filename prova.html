@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Keania+One&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <style>
         * {
@@ -18,7 +23,7 @@
         }
 
         .header {
-            background-color: #ff6127;
+            background-color: #FF6200;
             text-align: center;
             padding: 20px;
             color: white;
@@ -35,26 +40,27 @@
             place-items: center center;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 35px;     
+            gap: 35px;
         }
 
 
         .item {
-            width: 300px;
-            border-radius: 10px;
+            width: 380px;
+            border-radius: 15px;
             padding: 8px;
             text-align: center;
-            color: rgb(49, 49, 49);   
+            color: rgb(49, 49, 49);
             color: whitesmoke;
             background-color: #FF9D68;
-            font-weight: bold; 
+            font-weight: bold;
         }
 
         .item img {
             width: 100%;
             height: 150px;
-            border-radius: 10px;
+            border-radius: 15px;
         }
+
         .preço {
             color: whitesmoke;
             font-weight: bold;
@@ -74,28 +80,41 @@
 
 
         .footer {
-            background-color: #FF7F50;
+            background-color: #FF6200;
             color: white;
             text-align: center;
             padding: 20px;
             margin-top: 20px;
             font-size: 14px;
+            font-family: Inter;
         }
-        .foto-capa{
+
+        .foto-capa {
             width: 100%;
             height: 212px;
             background-image: url(https://cdn.mos.cms.futurecdn.net/GXHa4PWwDPx7tGQG9MDQvK.jpg);
             background-position: center;
             background-size: cover;
             border-radius: 0 0 15px 15px;
+            margin-bottom: 40px;
         }
-        .icone img{
-            width: 51px;
-            height: 45px;
+
+        .icone img {
+            width: 55px;
+            height: 48  px;
             position: absolute;
-            top: 5px;
-            left: 55px;
-            
+            top: 0px;
+            left: 50px;
+
+        }
+
+        .textotop {
+            font-family: Inter;
+            font-size: 36px;
+            position: relative;
+            left: 175px;
+            bottom: 18px;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -105,7 +124,7 @@
         <div class="icone">
             <img src="https://img.icons8.com/?size=160&id=9YgKo9PXNHu4&format=png">
         </div>
-        <p>LKCAM</p>  
+        <p class="textotop"><b><i>LKCAM</i></b></p>
     </header>
 
     <div class="foto-capa">
@@ -114,14 +133,15 @@
         <div class="item">
             <img src="https://samhurdphotography.s3.amazonaws.com/wp-content/uploads/2024/09/20123704/20240918_09_28_34-Edit-960x640.jpg"
                 alt="Câmera Canon EOS R5">
-            <div class="preço">R$ 31.000,00</div>
+            <div class="preço">R5:R$ 31.000,00</div>
             <h5>CANON EOS R5 (CORPO)</h5>
         </div>
         <div class="item">
-            <img src="https://samhurdphotography.s3.amazonaws.com/wp-content/uploads/2024/09/20123704/20240918_09_28_34-Edit-960x640.jpg"
+            <img src="https://s3-alpha-sig.figma.com/img/7f1a/b6f3/108efb6542cf6717b1b59f22ca3a22ed?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ijvUxB8YIElGXEt1wcp1o1DeFHvOZWCh1zrdMl1rdHHL3O11YuTZdE89oL0BGyh1Qi0apW51zvr7Tsr-z6vWSoajU4ZpBXhMWrXN8zOOvN~aP6NJ54CgEVfIeSgTNZKQEaxsQuTo1Ozd6yy3AmzIL7-C0uVk67KpcSzDObpWSrwOaJceaqH1LQ9JnTe1arBtz12RUaQyun~STRmpPrtYx20vYNaWd08viC05Hg9LPSFNkiQOsklFbP5QNwrAt47QaMDCw-WBI5a7mObQ3uRUYevnOo3373OpMIsECVvK~fx9VGwEDO6lloWCKQzwBWbjsK~ok7W6AwBf6Wosf7Rwjw__"
                 alt="Câmera Canon EOS R5">
-            <div class="preço">R$ 31.000,00</div>
-            <h5>CANON EOS R5 (CORPO)</h5>
+            <div class="preço">FX30: R$15,751.00</div>
+            <h4>
+                Câmera Sony FX30 Digital Cinema</h4>
         </div>
         <div class="item">
             <img src="https://samhurdphotography.s3.amazonaws.com/wp-content/uploads/2024/09/20123704/20240918_09_28_34-Edit-960x640.jpg"
@@ -139,8 +159,10 @@
 
 
     <footer class="footer">
+        <p><b>
         © 2024 LKCAM. Todos os direitos reservados.<br>
         Endereço: Rua das Flores, 123, Bairro Jardim, São Paulo, SP, 12345-678 | Telefone: (11) 98765-4321<br>
         E-mail: lkcam.lojas@gmail.com.br
+        </b></p>
     </footer>
 </body>
